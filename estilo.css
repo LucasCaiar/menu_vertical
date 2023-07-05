@@ -1,22 +1,48 @@
 * {
-  margin: 0;
+  margin: 2;
   padding: 0;
 }
 ul {
   list-style-type: none;
 }
-li a {
-  width: 200px;
-  height: 40px;
-  background: url(imagens/menu.png) no-repeat;
-  text-indent: 40px;
-  display: block;
-  text-decoration: none;
-  border: 1px solid orange;
-  line-height: 40px;
+.menu_vertical li a {
+    width: 200px;
+    height: 40px;
+    background: url(imagens/menu.png) no-repeat;
+    text-indent: 40px;
+    display: block;
+    text-decoration: none;
+    border: 1px solid orange;
+    line-height: 40px;
+    clear: both;
 }
-li a:hover, .selecionado a{
+.menu_vertical li a:hover,.menu_vertical .selecionado a{
   background-position: right;
   color: white;
   background-color: #f99200;
+
+}
+.menu_horizontal{
+    background: #159cb0 url(imagens/fundo-horizontal.png) repeat-x;
+    float: left;
+}
+.menu_horizontal li{
+    /* background: url(imagens/fundo-horizontal.png) no-repeat; */
+    float: left;
+    
+}
+.menu_horizontal a{
+    display: block;
+    text-decoration: none;
+    background: url(imagens/divisor.png) repeat-y;
+    padding: 0 2em;
+    line-height: 2.2em;
+    color: #fff;
+}
+.primeiro a{
+    background: none;
+}
+.menu_horizontal a:hover, .menu_horizontal .selecionado a{
+    color: #085662;
+    background: #44cade;
 }
